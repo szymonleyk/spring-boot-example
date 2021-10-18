@@ -1,8 +1,13 @@
 package pl.szymonleyk.springboot.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
 @Table(name="adres")
 public class Adres {
 
@@ -22,52 +27,4 @@ public class Adres {
     private String kodPocztowy;
 
     private String miejscowosc;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUlica() {
-        return ulica;
-    }
-
-    public void setUlica(String ulica) {
-        this.ulica = ulica;
-    }
-
-    public String getNrDomu() {
-        return nrDomu;
-    }
-
-    public void setNrDomu(String nrDomu) {
-        this.nrDomu = nrDomu;
-    }
-
-    public Integer getNrMieszkania() {
-        return nrMieszkania;
-    }
-
-    public void setNrMieszkania(Integer nrMieszkania) {
-        this.nrMieszkania = nrMieszkania;
-    }
-
-    public String getKodPocztowy() {
-        return kodPocztowy;
-    }
-
-    public void setKodPocztowy(String kodPocztowy) {
-        this.kodPocztowy = kodPocztowy;
-    }
-
-    public String getMiejscowosc() {
-        return miejscowosc;
-    }
-
-    public void setMiejscowosc(String miejscowosc) {
-        this.miejscowosc = miejscowosc;
-    }
 }
